@@ -1,0 +1,1 @@
+Article upload functionality then displaying articles on main page
