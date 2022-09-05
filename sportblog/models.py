@@ -1,3 +1,4 @@
+from flask import current_app
 from sportblog import db, login_manager, bcrypt
 from datetime import datetime
 from flask_login import UserMixin
