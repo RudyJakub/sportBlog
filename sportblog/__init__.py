@@ -36,8 +36,9 @@ def create_app(config_class=Config):
 
 
 def create_database(app):
+    app_context = app.app_context()
+    app_context.push()
     db.create_all(app=app)
-    print('Created Database!')
 
 
 def create_new_editor(app):
@@ -48,7 +49,7 @@ def create_new_editor(app):
     username = input('Username: ')
     password = input('Password: ')
 
-    new_editor = User.create(
+    new_editor = User(
         email=email,
         username=username,
         password=password

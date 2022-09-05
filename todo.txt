@@ -1,1 +1,8 @@
+Tests with PyTest
+
+on laptop: add to .env (
+    SECRET_KEY=5791628bb0b13ce0c676dfde280ba245
+    SQLALCHEMY_DATABASE_URI=sqlite:///site.db
+)
+
 Article upload functionality then displaying articles on main page
